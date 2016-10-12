@@ -14,7 +14,7 @@ BOT_NAME = 'housepricing'
 SPIDER_MODULES = ['housepricing.spiders']
 NEWSPIDER_MODULE = 'housepricing.spiders'
 
-
+DEFAULT_ITEM_CLASS = 'housepricing.items.HouseDataItem'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'housepricing (+http://www.yourdomain.com)'
 
