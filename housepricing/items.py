@@ -11,4 +11,21 @@ import scrapy
 class HousepricingItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+
     pass
+
+
+class HouseData(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    url = scrapy.Field()
+    community = scrapy.Field()
+    location = scrapy.Field()
+    build_time = scrapy.Field()
+    type = scrapy.Field()
+    room_shape = scrapy.Field()
+    area = scrapy.Field()
+    floor = scrapy.Field()
+    decorate = scrapy.Field()
+    average_price = scrapy.Field()
+    price = scrapy.Field()
