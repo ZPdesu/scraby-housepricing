@@ -15,7 +15,7 @@ class HousepricingItem(scrapy.Item):
     pass
 
 
-class HouseData(scrapy.Item):
+class HouseDataItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     url = scrapy.Field()
@@ -29,3 +29,4 @@ class HouseData(scrapy.Item):
     decorate = scrapy.Field()
     average_price = scrapy.Field()
     price = scrapy.Field()
+
