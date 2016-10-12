@@ -8,7 +8,7 @@ class AnjukeSpider(CrawlSpider):
     name = 'anjuke'
     allow_domains = ['http://beijing.anjuke.com/']
     start_urls = ['http://beijing.anjuke.com/sale']
-    rules = [Rule(sle(allow=r'/sale/p\d+/#filtersort'), follow=True, callback='parse')]
+    rules = [Rule(sle(allow=r'/p\d+/#filtersort'), follow=True, callback='parse')]
 
     def parse(self, response):
         sel = Selector(response)
