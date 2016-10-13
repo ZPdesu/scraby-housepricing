@@ -22,8 +22,8 @@ class AnjukeSpider(CrawlSpider):
             item['room_shape'] = site.xpath('div[@class="house-details"]/div[2]/span[2]/text()').extract()
             item['average_price'] = site.xpath('div[@class="house-details"]/div[2]/span[3]/text()').extract()
             item['floor'] = site.xpath('div[@class="house-details"]/div[2]/span[4]/text()').extract()
-            item['floor'] = site.xpath('div[@class="house-details"]/div[2]/span[5]/text()').extract()
-            item['location'] = site.xpath('div[@class="house-details"]/div[2]/span[@class="comm-address"]/text()').extract()
-            item['price'] = site.xpath('div[@class="house-details"]/div[3]/span/strong/text()').extract()
+            item['build_time'] = site.xpath('div[@class="house-details"]/div[2]/span[5]/text()').extract()
+            item['location'] = site.xpath('div[@class="house-details"]//span[@class="comm-address"]/text()').extract()
+            item['price'] = site.xpath('div[@class="pro-price"]/span/strong/text()').extract()
             yield item
 
