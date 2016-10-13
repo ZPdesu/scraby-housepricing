@@ -8,9 +8,9 @@ class AnjukeSpider(CrawlSpider):
     name = 'anjuke'
     allow_domains = ['http://beijing.anjuke.com/']
     start_urls = ['http://beijing.anjuke.com/sale']
-    rules = [Rule(sle(allow='/p\d+/#filtersort'), follow=True, callback='parse_item')]
+    rules = [Rule(sle(allow='/p\d+/#filtersort'), follow=True, callback='parse_site')]
 
-    def parse_item(self, response):
+    def parse_site(self, response):
         sel = Selector(response)
         sites = sel.xpath('//ul[@id="houselist-mod"]/li')
 
