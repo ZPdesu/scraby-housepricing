@@ -8,13 +8,6 @@
 import scrapy
 
 
-class HousepricingItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-
-    pass
-
-
 class HouseDataItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
