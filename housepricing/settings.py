@@ -15,6 +15,7 @@ SPIDER_MODULES = ['housepricing.spiders']
 NEWSPIDER_MODULE = 'housepricing.spiders'
 
 DEFAULT_ITEM_CLASS = 'housepricing.items.HouseDataItem'
+ITEM_PIPELINES = {'housepricing.pipelines.HousepricingPipeline': 1}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'housepricing (+http://www.yourdomain.com)'
 
